@@ -7,9 +7,11 @@
   </head>
   <body>
     <script type="module" src="/src/main.ts"></script>
+    <button id="audio-btn" class="audio-btn">🔇</button>
+
     <a-scene>
       <a-assets>
-        <video id="demo" src="/demo.mp4" loop crossorigin="anonymous" playsinline webkit-playsinline></video>
+        <video id="demo" src="/demo.mp4" loop crossorigin="anonymous" playsinline webkit-playsinline muted autoplay></video>
       </a-assets>
       <a-videosphere src="#demo"></a-videosphere>
     </a-scene>
